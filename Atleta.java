@@ -7,8 +7,8 @@ class Atleta {
       nome = n;
     }
 
-    public void setIdade(int i) {
-      idade = i;
+    public void setIdade(int n) {
+      idade = n;
     }
 
     public String getNome() {
@@ -16,7 +16,7 @@ class Atleta {
     }
 
     public int getIdade() {
-      return idade;
+      return idade;  //simulando retorno com erro
     }
 
 
