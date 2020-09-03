@@ -8,3 +8,4 @@ Trata-se de um sistema de gerenciamento de imc (indice de massa corporal) para c
 - encapsulamento simples com get/set (privando acesso aos atributos)
 - teste unitario, simples
 - teste unitario, com codigo e manipulacao de Exception
+- organização de pastas (inicial) e testes

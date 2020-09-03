@@ -1,11 +1,4 @@
-class TestUnitario {
-
-  public void executarAll() throws Exception {
-
-    this.testNome();
-    this.testIdade();
-
-  }
+class TestAtleta {
 
   public void testNome() throws Exception {
 
