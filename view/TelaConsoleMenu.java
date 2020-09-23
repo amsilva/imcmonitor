@@ -35,7 +35,6 @@ class TelaConsoleMenu {
 
       }
 
-
       System.out.println("fim, telaconsolemenu!");
 
     }
@@ -61,13 +60,15 @@ class TelaConsoleMenu {
 
       System.out.println("\nListagem de Atletas:");
 
-      cont i = 1;
-      for(Atleta atemp : matriculas) {
-        System.out.println(i++ + ") " + atemp.getNome() + " (" + atemp.getIdade() + ")");
+      if(matriculas.size() > 0) {
+        int cont = 1;
+        for(Atleta atemp : matriculas) {
+          System.out.println(cont++ + ") " + atemp.getNome() + " (" + atemp.getIdade() + ")");
+        }
+      } else {
+        System.out.println("Nenhum atleta matriculado!");
       }
 
     }
-
-
 
 }
