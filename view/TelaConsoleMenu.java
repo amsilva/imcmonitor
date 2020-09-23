@@ -1,10 +1,10 @@
 import java.util.Scanner;
+import java.util.ArrayList;
 
 class TelaConsoleMenu {
 
     Scanner teclado = new Scanner(System.in);
-    Atleta atletaDaAcademia = new Atleta();
-
+    ArrayList<Atleta> matriculas = new ArrayList<Atleta>(); 
 
     public void executar() {
       
@@ -18,7 +18,7 @@ class TelaConsoleMenu {
         System.out.println("11 [>] LISTAGEM");
         System.out.println(" 0 [X] SAIR");
         System.out.println("---------------");
-        System.out.println("Opcao:_");
+        System.out.print("Opcao:_");
         op = teclado.nextInt();
 
         if(op == 1) {
@@ -41,7 +41,7 @@ class TelaConsoleMenu {
     }
 
     private void incluirNovoAtleta(){
-      System.out.println("Novo Atleta");
+      System.out.println("\nNovo Atleta");
 
       System.out.print("nome_: ");
       String nome = teclado.next();
@@ -53,24 +53,20 @@ class TelaConsoleMenu {
       novo.setNome(nome);
       novo.setIdade(idade);
 
-      atletaDaAcademia = novo;
+      matriculas.add(novo);
 
     }
 
     private void listarAtletas(){
 
-      System.out.println("Listagem de Atletas:");
+      System.out.println("\nListagem de Atletas:");
 
-      System.out.println(atletaDaAcademia.getNome() + " (" + atletaDaAcademia.getIdade() + ")");
-
+      cont i = 1;
+      for(Atleta atemp : matriculas) {
+        System.out.println(i++ + ") " + atemp.getNome() + " (" + atemp.getIdade() + ")");
+      }
 
     }
-
-
-
-
-
-
 
 
 
