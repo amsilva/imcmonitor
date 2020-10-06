@@ -2,24 +2,6 @@ class TestAtleta {
 
   public void testNome() throws Exception {
 
-    Atleta atleta = new Atleta();
-    String nome;
-
-    nome = "ABCD";
-    atleta.setNome(nome);
-    if (!atleta.getNome().equals(nome))
-      throw new Exception("[erro] falha manipulando NOME valor " + nome);
-
-    nome = " ";
-    atleta.setNome(nome);
-    if (!atleta.getNome().equals(nome))
-      throw new Exception("[erro] falha manipulando NOME valor " + nome);
-
-    nome = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
-    atleta.setNome(nome);
-    if (!atleta.getNome().equals(nome))
-      throw new Exception("[erro] falha manipulando NOME valor " + nome);
-
   }
 
   public void testIdade() throws Exception {
