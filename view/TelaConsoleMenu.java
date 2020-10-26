@@ -6,6 +6,8 @@ class TelaConsoleMenu {
     Scanner teclado = new Scanner(System.in);
     ArrayList<Atleta> matriculas = new ArrayList<Atleta>(); 
 
+    DAO dao = new DAO();
+
     public void executar() {
       
       boolean sair = false;
@@ -39,13 +41,13 @@ class TelaConsoleMenu {
         }
 
         if(op == 0) {
-          //(DAO) saveAll(matriculas); //para amanha
+          dao.saveAll(matriculas); 
           sair = true;
         }
 
       }
 
-      System.out.println("fim, telaconsolemenu!");
+      System.out.println("fim, ok!");
 
     }
 
